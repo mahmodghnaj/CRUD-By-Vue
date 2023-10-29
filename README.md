@@ -26,4 +26,8 @@ npm run build
 
 ```
 
+### Demo
+
+You can check out the demo [here](https://task-nu-three.vercel.app/).
+
 # task

@@ -1,0 +1,74 @@
+.table {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: var(--rounded-box, 1rem);
+}
+
+.table :where(th, td) {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  vertical-align: middle;
+}
+
+.table tr.active,
+.table tr.active:nth-child(even),
+.table-zebra tbody tr:nth-child(even) {
+  background-color: var(--base-200);
+}
+
+@media (hover: hover) {
+  .table tr.hover:hover,
+  .table tr.hover:nth-child(even):hover {
+    background-color: var(--base-200);
+  }
+}
+.table :where(thead, tbody) :where(tr:not(:last-child)),
+.table :where(thead, tbody) :where(tr:first-child:last-child) {
+  border-bottom-width: 1px;
+  border-bottom-color: var(--base-300);
+}
+
+.table :where(thead, tfoot) {
+  white-space: nowrap;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: var(--base-content);
+}
+
+.table :where(.table-pin-cols tr th) {
+  position: sticky;
+  left: 0px;
+  right: 0px;
+  background-color: var(--base-100);
+}
+
+.table :not(thead):not(tfoot) tr {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.table-action {
+  padding: var(--sm);
+  border-radius: var(--sm);
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.table-action:hover {
+  opacity: 0.8;
+}
+.action-view {
+  background-color: var(--secondary);
+}
+.action-delete {
+  background-color: crimson;
+}
+
+.action-edit {
+  background-color: var(--accent);
+}

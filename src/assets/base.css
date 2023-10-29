@@ -1,0 +1,70 @@
+:root {
+  --primary: #661ae6;
+  --primary-content: #ffffff;
+  --secondary: #d926aa;
+  --accent: #1fb2a5;
+  --neutral: #2a323c;
+  --base-100: #1d232a;
+  --base-200: #191e24;
+  --base-300: #15191e;
+  --base-content: #a6adbb;
+  --xs: 4px;
+  --sm: 8px;
+  --md: 12px;
+  --lg: 16px;
+  --xl: 24px;
+  --font-small: 14px;
+  --font-medium: 16px;
+  --font-large: 24px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+#app {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  flex: 1;
+  background-color: var(--neutral);
+  overflow-y: auto;
+}
+body {
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--base-100);
+  color: var(--base-content);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.error-message {
+  color: red;
+  font-size: var(--lg);
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-content);
+  border-radius: 10px;
+  border: 2px solid var(--primary-content);
+}

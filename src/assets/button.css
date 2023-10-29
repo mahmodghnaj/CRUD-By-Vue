@@ -1,0 +1,45 @@
+.btn {
+  font-weight: 600;
+  text-decoration-line: none;
+  display: inline-flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1em;
+  border-width: 6px;
+  height: 2.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  min-height: 2rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  animation: button-pop 0.25s ease-out;
+}
+.btn:active:hover,
+.btn:active:focus {
+  animation: button-pop 0s ease-out;
+  transform: scale(0.97);
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--primary-content);
+  outline-color: var(--primary);
+}
+@keyframes button-pop {
+  0% {
+    transform: scale(var(--btn-focus-scale, 0.98));
+  }
+  40% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

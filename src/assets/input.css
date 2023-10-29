@@ -1,0 +1,19 @@
+.input {
+  border-width: 1px;
+  border-color: var(--primary);
+  background-color: var(--base-100);
+  border-radius: 0.5rem;
+  flex-shrink: 1;
+  height: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 2rem;
+  color: var(--base-content);
+}
+.input:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: var(--primary);
+}
